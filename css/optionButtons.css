@@ -1,0 +1,21 @@
+.filter .buttons{
+    display: flex;
+    height: 50px;
+}
+.filter .buttons button {
+   display: flex;
+   gap: 10px;
+   border: none;
+   align-items: center;
+   padding: 10px 20px;
+   background-color: transparent;
+   cursor: pointer;
+   color: #004D5A
+   ;
+   font-size: 12px
+   ;
+   font-weight: 500;
+  }
+  .filter .buttons button.active{
+    background-color: #baf3e6;
+  }

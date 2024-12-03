@@ -1,0 +1,170 @@
+.filter-options {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    /* background-color: #f9f9f9; */
+    border: 1px solid #ddd;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.filter-options::-webkit-scrollbar {
+    width: 8px;
+}
+
+.filter-options::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.filter-options::-webkit-scrollbar-thumb {
+    background-color: #004956;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+.filter-options::-webkit-scrollbar-thumb:hover {
+    background-color: #003b44;
+}
+
+.option {
+
+    width: 100%;
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+}
+
+
+
+.option-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.option-title.active .title {
+    color: #004956
+}
+
+.option-title.active .title i {
+    color: #004956
+}
+
+.option-title.active .toggle-icon {
+    color: #004956;
+    border-color: #004956;
+}
+
+.option-title .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+.option-title .title i {
+    margin-right: 8px;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+.option-title i {
+    margin-right: 8px;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+.option-title.sub-parent {
+    padding: 10px;
+    padding-right: 40px;
+    align-items: center;
+    position: relative;
+    margin-right: 30px;
+
+}
+
+.option-title.sub-parent .title {
+    font-size: 14px;
+    color: #666666;
+
+}
+
+.sub-parent .toggle-icon {
+    border: none;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.option-title.child {
+
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    padding-right: 40px;
+    margin-right: 30px;
+}
+
+.option-title.child .title {
+    font-size: 12px;
+    color: #444444;
+    font-weight: 400;
+
+}
+
+.option-title.child .title:hover {
+    color: #003b44;
+}
+
+
+.option-title span {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.toggle-icon {
+    font-size: 10px;
+    color: #a2a2a2;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 1px solid #a2a2a2;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.children {
+    padding-left: 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.children.hidden {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.children:not(.hidden) {
+    max-height: 1000px;
+    opacity: 1;
+    pointer-events: auto;
+}

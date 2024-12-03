@@ -1,0 +1,128 @@
+
+
+
+.article {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.article h1 {
+  font-size: 22.5px;
+  margin-bottom: 10px;
+  color: #004956;
+  font-weight: 500;
+}
+
+.article .date {
+  font-size: 13px;
+  color: #444444;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.article .intro {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-indent: 20px;
+}
+
+.article .list-section {
+  margin-bottom: 20px;
+}
+.article .list-section h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #00A885;
+  font-weight: 700;
+}
+.article .list-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.article .list-section li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.article .steps-section {
+  margin-bottom: 20px;
+}
+.article .steps-section h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #00A885;
+  font-weight: 700;
+}
+.article .steps-section ol {
+  margin-left: 20px;
+}
+.article .steps-section li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.article img {
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.article .faq-section {
+  margin-bottom: 20px;
+}
+.article .faq-section h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #00A885;
+  font-weight: 700;
+}
+.article .faq-section .faq {
+  margin-bottom: 15px;
+}
+.article .faq-section strong {
+  display: block;
+  font-weight: bold;
+  color: #222;
+}
+.article .faq-section p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.article .related-section {
+  margin-bottom: 20px;
+}
+.article .related-section h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #00A885;
+  font-weight: 700;
+}
+.article .related-section ul {
+  list-style-position: inside;
+  padding: 20px;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+.article .related-section li {
+  margin-bottom: 5px;
+}
+.article .related-section a {
+  font-size: 15px;
+  color: #004D5A;
+  font-weight: 400;
+  text-decoration: none;
+}
+.article .related-section a:hover {
+  text-decoration: underline;
+}
+
